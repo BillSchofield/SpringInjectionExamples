@@ -20,6 +20,6 @@ public class AutowiredVehicle implements Vehicle{
     }
 
     public String go() {
-        return mover.move() + " and then weapon " + weapon.shoot();
+        return mover.move() + " and then the weapon " + weapon.shoot();
     }
 }

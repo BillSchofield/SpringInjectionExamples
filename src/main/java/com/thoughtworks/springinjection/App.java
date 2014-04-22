@@ -31,8 +31,10 @@ public class App {
     private static void springXmlWay(ApplicationContext context) {
         Vehicle vehicle = (Vehicle) context.getBean("vehicle");
         System.out.println(vehicle.go());
-        Vehicle flyingSquirtGun = (Vehicle) context.getBean("squirtGunAirplane");
-        System.out.println(flyingSquirtGun.go());
+//        Vehicle flyingSquirtGun = (Vehicle) context.getBean("squirtGunAirplane");
+//        System.out.println(flyingSquirtGun.go());
+//        Vehicle autowiredVehicle = (Vehicle) context.getBean("autowiredVehicle");
+//        System.out.println(autowiredVehicle.go());
     }
 
     private static void springAutowiredWay(ApplicationContext context) {

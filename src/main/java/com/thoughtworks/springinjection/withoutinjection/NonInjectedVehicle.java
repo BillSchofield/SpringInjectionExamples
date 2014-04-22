@@ -18,6 +18,6 @@ public class NonInjectedVehicle implements Vehicle {
     private Mover mover;
 
     public String go() {
-        return mover.move() + " and then weapon " + weapon.shoot();
+        return mover.move() + " and then the weapon " + weapon.shoot();
     }
 }
