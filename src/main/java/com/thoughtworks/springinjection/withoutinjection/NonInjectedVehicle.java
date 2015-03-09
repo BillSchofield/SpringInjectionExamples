@@ -8,14 +8,13 @@ import com.thoughtworks.springinjection.weapons.Weapon;
 
 public class NonInjectedVehicle implements Vehicle {
 
+    private Mover mover;
     private Weapon weapon;
 
     public NonInjectedVehicle() {
         this.mover = new WheeledMover();
         this.weapon = new SquirtGun();
     }
-
-    private Mover mover;
 
     public String go() {
         return mover.move() + " and then the weapon " + weapon.shoot();

@@ -14,7 +14,7 @@ public class AutowiredVehicle implements Vehicle{
     private Weapon weapon;
 
     @Autowired
-    public AutowiredVehicle(@Qualifier("flyingMover") Mover mover, @Qualifier("dartGun") Weapon weapon) {
+    public AutowiredVehicle(@Qualifier("theWheeledMover") Mover mover, @Qualifier("theSquirtGun") Weapon weapon) {
         this.mover = mover;
         this.weapon = weapon;
     }
