@@ -8,7 +8,7 @@ import com.thoughtworks.springinjection.withoutinjection.NonInjectedVehicle;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class App {
+public class Main {
     public static void main(String[] args) {
         final ApplicationContext context = new ClassPathXmlApplicationContext("spring-config.xml");
 
