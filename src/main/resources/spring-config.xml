@@ -12,6 +12,11 @@
         <constructor-arg ref="theSquirtGun"/>
     </bean>
 
+    <bean id="dartGunCar" class="com.thoughtworks.springinjection.springxmlinjection.SpringInjectedVehicle">
+        <constructor-arg ref="theWheeledMover"/>
+        <constructor-arg ref="theDartGun"/>
+    </bean>
+
     <bean id="theWheeledMover" class="com.thoughtworks.springinjection.movers.WheeledMover"/>
     <bean id="theDartGun" class="com.thoughtworks.springinjection.weapons.DartGun"/>
     <bean id="theSquirtGun" class="com.thoughtworks.springinjection.weapons.SquirtGun"/>

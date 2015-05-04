@@ -4,4 +4,4 @@
 *.ear
 out/
 .idea/
-target/*.xml
+target/
