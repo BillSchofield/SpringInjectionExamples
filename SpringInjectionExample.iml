@@ -25,12 +25,11 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-context:3.2.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:3.2.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-beans:3.2.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:3.2.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:3.2.0.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.8.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:3.2.0.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-webmvc:3.2.0.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-web:3.2.0.RELEASE" level="project" />
   </component>
 </module>
-
