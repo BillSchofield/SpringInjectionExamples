@@ -10,7 +10,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
     public static void main(String[] args) {
-        final ApplicationContext context = new ClassPathXmlApplicationContext("spring-config.xml");
 
         {
             Vehicle vehicle = new NonInjectedVehicle();
@@ -25,16 +24,15 @@ public class Main {
         }
 
         {
-            Vehicle vehicle = (Vehicle) context.getBean("vehicle");
-            System.out.println(vehicle.go());
+            ApplicationContext context = new ClassPathXmlApplicationContext("spring-config.xml");
 
-//        Vehicle flyingSquirtGun = (Vehicle) context.getBean("squirtGunAirplane");
-//        System.out.println(flyingSquirtGun.go());
-//        Vehicle autowiredVehicle = (Vehicle) context.getBean("autowiredVehicle");
-//        System.out.println(autowiredVehicle.go());
+            Vehicle vehicle = (Vehicle) context.getBean("vehicle");
+
+            System.out.println(vehicle.go());
         }
 
         {
+            final ApplicationContext context = new ClassPathXmlApplicationContext("spring-config.xml");
             Vehicle vehicle = context.getBean(AutowiredVehicle.class);
             System.out.println(vehicle.go());
         }
