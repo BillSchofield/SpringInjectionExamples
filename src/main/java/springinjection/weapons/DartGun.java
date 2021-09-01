@@ -1,4 +1,4 @@
-package com.thoughtworks.springinjection.weapons;
+package springinjection.weapons;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;

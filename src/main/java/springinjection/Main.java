@@ -1,10 +1,10 @@
-package com.thoughtworks.springinjection;
+package springinjection;
 
-import com.thoughtworks.springinjection.manualinjection.ManuallyInjectedVehicle;
-import com.thoughtworks.springinjection.movers.WheeledMover;
-import com.thoughtworks.springinjection.springautowiredinjection.AutowiredVehicle;
-import com.thoughtworks.springinjection.weapons.SquirtGun;
-import com.thoughtworks.springinjection.withoutinjection.NonInjectedVehicle;
+import springinjection.manualinjection.ManuallyInjectedVehicle;
+import springinjection.movers.WheeledMover;
+import springinjection.springautowiredinjection.AutowiredVehicle;
+import springinjection.weapons.SquirtGun;
+import springinjection.withoutinjection.NonInjectedVehicle;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

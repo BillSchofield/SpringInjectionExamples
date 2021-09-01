@@ -1,8 +1,8 @@
-package com.thoughtworks.springinjection.manualinjection;
+package springinjection.manualinjection;
 
-import com.thoughtworks.springinjection.Vehicle;
-import com.thoughtworks.springinjection.movers.Mover;
-import com.thoughtworks.springinjection.weapons.Weapon;
+import springinjection.Vehicle;
+import springinjection.movers.Mover;
+import springinjection.weapons.Weapon;
 
 public class ManuallyInjectedVehicle implements Vehicle {
     private final Weapon weapon;

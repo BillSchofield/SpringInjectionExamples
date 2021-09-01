@@ -1,8 +1,8 @@
-package com.thoughtworks.springinjection.springxmlinjection;
+package springinjection.springxmlinjection;
 
-import com.thoughtworks.springinjection.Vehicle;
-import com.thoughtworks.springinjection.movers.Mover;
-import com.thoughtworks.springinjection.weapons.Weapon;
+import springinjection.Vehicle;
+import springinjection.movers.Mover;
+import springinjection.weapons.Weapon;
 
 public class SpringInjectedVehicle implements Vehicle{
 

@@ -1,4 +1,4 @@
-package com.thoughtworks.springinjection.movers;
+package springinjection.movers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

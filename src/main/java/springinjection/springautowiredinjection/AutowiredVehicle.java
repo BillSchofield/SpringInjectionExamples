@@ -1,8 +1,8 @@
-package com.thoughtworks.springinjection.springautowiredinjection;
+package springinjection.springautowiredinjection;
 
-import com.thoughtworks.springinjection.Vehicle;
-import com.thoughtworks.springinjection.movers.Mover;
-import com.thoughtworks.springinjection.weapons.Weapon;
+import springinjection.Vehicle;
+import springinjection.movers.Mover;
+import springinjection.weapons.Weapon;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;

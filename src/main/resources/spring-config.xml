@@ -5,23 +5,23 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
     <context:annotation-config />
 
-    <context:component-scan base-package="com.thoughtworks.springinjection"/>
+    <context:component-scan base-package="springinjection"/>
 
-    <bean id="vehicle" class="com.thoughtworks.springinjection.springxmlinjection.SpringInjectedVehicle">
+    <bean id="vehicle" class="springinjection.springxmlinjection.SpringInjectedVehicle">
         <constructor-arg ref="theWheeledMover"/>
         <constructor-arg ref="theSquirtGun"/>
     </bean>
 
-    <bean id="dartGunCar" class="com.thoughtworks.springinjection.springxmlinjection.SpringInjectedVehicle">
+    <bean id="dartGunCar" class="springinjection.springxmlinjection.SpringInjectedVehicle">
         <constructor-arg ref="theWheeledMover"/>
         <constructor-arg ref="theDartGun"/>
     </bean>
 
-    <bean id="theWheeledMover" class="com.thoughtworks.springinjection.movers.WheeledMover"/>
-    <bean id="theDartGun" class="com.thoughtworks.springinjection.weapons.DartGun"/>
-    <bean id="theSquirtGun" class="com.thoughtworks.springinjection.weapons.SquirtGun"/>
+    <bean id="theWheeledMover" class="springinjection.movers.WheeledMover"/>
+    <bean id="theDartGun" class="springinjection.weapons.DartGun"/>
+    <bean id="theSquirtGun" class="springinjection.weapons.SquirtGun"/>
 
-    <bean id="squirtGunAirplane" class="com.thoughtworks.springinjection.springxmlinjection.SpringInjectedVehicle">
+    <bean id="squirtGunAirplane" class="springinjection.springxmlinjection.SpringInjectedVehicle">
         <constructor-arg ref="flyingMover"/>
         <constructor-arg ref="theSquirtGun"/>
     </bean>

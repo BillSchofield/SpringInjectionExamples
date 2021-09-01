@@ -1,4 +1,4 @@
-package com.thoughtworks.springinjection;
+package springinjection;
 
 public interface Vehicle {
     public String go();

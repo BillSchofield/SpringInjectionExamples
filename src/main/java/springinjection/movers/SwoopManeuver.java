@@ -1,4 +1,4 @@
-package com.thoughtworks.springinjection.movers;
+package springinjection.movers;
 
 import org.springframework.stereotype.Component;
 
