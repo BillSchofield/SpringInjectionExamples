@@ -8,8 +8,8 @@ import springinjection.weapons.Weapon;
 
 public class NonInjectedVehicle implements Vehicle {
 
-    private Mover mover;
-    private Weapon weapon;
+    private final Mover mover;
+    private final Weapon weapon;
 
     public NonInjectedVehicle() {
         this.mover = new WheeledMover();

@@ -1,18 +1,24 @@
 package springinjection;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.SpringBootConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import springinjection.manualinjection.ManuallyInjectedVehicle;
 import springinjection.movers.WheeledMover;
 import springinjection.springautowiredinjection.AutowiredVehicle;
 import springinjection.weapons.SquirtGun;
 import springinjection.withoutinjection.NonInjectedVehicle;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+@SpringBootApplication
 public class Main {
     public static void main(String[] args) {
 
         {
-            Vehicle vehicle = new NonInjectedVehicle();
+            final Vehicle vehicle = new NonInjectedVehicle();
             System.out.println(vehicle.go());
         }
 
@@ -24,17 +30,9 @@ public class Main {
         }
 
         {
-            ApplicationContext context = new ClassPathXmlApplicationContext("spring-config.xml");
-
-            Vehicle vehicle = (Vehicle) context.getBean("vehicle");
-
-            System.out.println(vehicle.go());
-        }
-
-        {
-            final ApplicationContext context = new ClassPathXmlApplicationContext("spring-config.xml");
-            Vehicle vehicle = context.getBean(AutowiredVehicle.class);
-            System.out.println(vehicle.go());
+            ApplicationContext context = new AnnotationConfigApplicationContext(Main.class);
+            AutowiredVehicle autowiredVehicle = context.getBean(AutowiredVehicle.class);
+            System.out.println(autowiredVehicle.go());
         }
     }
 }

@@ -1,0 +1,22 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.1'
+
+    implementation 'org.springframework.boot:spring-boot-starter:2.7.6'
+    implementation 'com.google.guava:guava:31.1-jre'
+}
+
+application {
+    mainClass = 'Main'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
