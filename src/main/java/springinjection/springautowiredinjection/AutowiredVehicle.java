@@ -2,6 +2,7 @@ package springinjection.springautowiredinjection;
 
 import springinjection.Vehicle;
 import springinjection.movers.Mover;
+import springinjection.movers.WheeledMover;
 import springinjection.weapons.Weapon;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -14,7 +15,7 @@ public class AutowiredVehicle implements Vehicle{
     private Weapon weapon;
 
     @Autowired
-    public AutowiredVehicle(@Qualifier("theWheeledMover") Mover mover, @Qualifier("theSquirtGun") Weapon weapon) {
+    public AutowiredVehicle(WheeledMover mover, @Qualifier("theSquirtGun") Weapon weapon) {
         this.mover = mover;
         this.weapon = weapon;
     }
